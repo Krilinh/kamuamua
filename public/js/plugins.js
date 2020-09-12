@@ -1768,7 +1768,7 @@ window.SEMICOLON_getInstagramPhotos = function( element, username, limit, nextke
 
 					let photo = images[i];
 
-					html = html+'<a class="grid-item" href="https://instagram.com/p/'+ photo.node.shortcode +'" target="_blank"><img src="'+ photo.node.thumbnail_resources[2].src +'" alt="Image"></a>';
+					html = html+'<a class="grid-item" href="https://instagram.com/p/'+ photo.node.shortcode +'" target="_blank"><img src="'+ photo.node.thumbnail_resources[2].src +'" alt="Image"><i class="icon-instagram"></i></a>';
 				}
 
 				element.html( html ).removeClass('customjs');

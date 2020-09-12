@@ -4,5 +4,32 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
+/* Blur + Gray Scale */
+.instagram-photos .grid-item > img {
+    -webkit-filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.instagram-photos .grid-item:hover > img{
+    -webkit-filter: grayscale(80%) blur(3px);
+    filter: grayscale(80%) blur(3px);
+}
 
+.instagram-photos .grid-item > i{
+    opacity: 0;
+    font-size: 2rem;
+    position: relative;
+    top: -45%;
+    left: 45%;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
 
+.instagram-photos .grid-item:hover > i{
+    opacity: 1;
+}
+
+#wrapper{
+    overflow: hidden;
+}
