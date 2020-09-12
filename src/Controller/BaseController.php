@@ -11,7 +11,7 @@ class BaseController extends AbstractController
 {
 
     /**
-     * @Route("/")
+     * @Route("/", name="home")
      */
     public function home()
     {

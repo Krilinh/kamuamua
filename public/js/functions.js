@@ -712,13 +712,13 @@ var SEMICOLON = SEMICOLON || {};
 							if( ( windowScrT - headerOffset ) > Number( stickyShrinkOffset ) ) {
 								$header.addClass('sticky-header-shrink');
 								if( headerSizeCustom ){
-									logo.find('img').css({ 'height': Number( stickyLogoH ) });
+									//logo.find('img').css({ 'height': Number( stickyLogoH ) });
 									SEMICOLON.header.menuItemsSpacing( stickyMenuP );
 								}
 							} else {
 								$header.removeClass('sticky-header-shrink');
 								if( headerSizeCustom ){
-									logo.find('img').css({ 'height': Number( defLogoH ) });
+									//logo.find('img').css({ 'height': Number( defLogoH ) });
 									SEMICOLON.header.menuItemsSpacing( defMenuP );
 								}
 							}
@@ -728,7 +728,7 @@ var SEMICOLON = SEMICOLON || {};
 				} else {
 					SEMICOLON.header.removeStickyness();
 					if( headerSizeCustom ){
-						logo.find('img').css({ 'height': Number( defLogoH ) });
+						//logo.find('img').css({ 'height': Number( defLogoH ) });
 						SEMICOLON.header.menuItemsSpacing( defMenuP );
 					}
 				}
@@ -747,7 +747,7 @@ var SEMICOLON = SEMICOLON || {};
 					SEMICOLON.header.removeStickyness();
 				}
 				if( headerSizeCustom ){
-					logo.find('img').css({ 'height': Number( mobileLogoH ) });
+					//logo.find('img').css({ 'height': Number( mobileLogoH ) });
 					SEMICOLON.header.menuItemsSpacing( '' );
 				}
 			}
@@ -2169,10 +2169,10 @@ var SEMICOLON = SEMICOLON || {};
 		$header = $('#header'),
 		$headerWrap = $('#header-wrap'),
 		$headerInc = $('.include-header'),
-		defLogoH	= $header.attr('data-logo-height') || 100,
+		//defLogoH	= $header.attr('data-logo-height') || 100,
 		stickyLogoH = $header.attr('data-sticky-logo-height') || 60,
 		mobileSticky = $header.attr('data-mobile-sticky') || 'false',
-		mobileLogoH = $header.attr('data-mobile-logo-height') || Number( defLogoH ),
+		//mobileLogoH = $header.attr('data-mobile-logo-height') || Number( defLogoH ),
 		mobileStickyLogoH = $header.attr('data-mobile-sticky-logo-height') || Number( stickyLogoH ),
 		defMenuP	= $header.attr('data-menu-padding') || 39,
 		stickyMenuP = $header.attr('data-sticky-menu-padding') || 19,
