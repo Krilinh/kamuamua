@@ -15,7 +15,15 @@ class BaseController extends AbstractController
      */
     public function home()
     {
-        return $this->render('base.html.twig', []);
+        return $this->render('home.html.twig', []);
+    }
+
+    /**
+     * @Route("/portfolio", name="portfolio")
+     */
+    public function portfolio()
+    {
+        return $this->render('portfolio.html.twig', []);
     }
 
     /**

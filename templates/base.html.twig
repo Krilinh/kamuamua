@@ -34,7 +34,7 @@
 ============================================= -->
 <div id="wrapper" class="clearfix">
 
-    {% include 'navbar.html.twig' %}
+    {% include 'navbar-classic.html.twig' %}
 
     {% block body %}{% endblock %}
 
@@ -46,7 +46,7 @@
 ============================================= -->
 <div id="gotoTop" class="icon-angle-up rounded-circle bg-white text-dark h-bg-color h-text-light"></div>
 
-{% block javascripts %}{% endblock %}
+
 <!-- JavaScripts
 ============================================= -->
 <script src="{{ asset('js/jquery.js') }}"></script>
@@ -55,6 +55,8 @@
 <!-- Footer Scripts
 ============================================= -->
 <script src="{{ asset('js/functions.js') }}"></script>
+
+{% block javascripts %}{% endblock %}
 
 </body>
 </html>
